@@ -8,8 +8,13 @@ if ($_SESSION["role"] != "admin") {
 }
 include "nav_bar.php";
 include_once "../connexion.php";
+
+
 $req = mysqli_query($conn, "SELECT * FROM utilisateur inner join role using(id_role)");
+
 ?>
+
+
 <div class="main-panel">
 
   <div class="content-wrapper">
